@@ -12,7 +12,7 @@ import java.time.Duration;
 public class BaseTest {
     WebDriver driver;
     Wikipedia wikipedia;
-    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
     public WebDriver getDriver(){
         return driver;
     }

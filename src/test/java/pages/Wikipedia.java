@@ -14,12 +14,12 @@ public class Wikipedia extends BasePage{
     WebElement btnSearch;
 
     public void input(String msg){
-        getWait().until(ExpectedConditions.visibilityOf(input));
+        getWait().until(ExpectedConditions.elementToBeClickable(input));
         input.sendKeys(msg);
     }
 
     public void clickBtnSearch(){
-        getWait().until(ExpectedConditions.visibilityOf(btnSearch));
+        getWait().until(ExpectedConditions.elementToBeClickable(btnSearch));
         btnSearch.click();
     }
 
